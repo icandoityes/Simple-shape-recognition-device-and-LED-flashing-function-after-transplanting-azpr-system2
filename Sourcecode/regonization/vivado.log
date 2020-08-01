@@ -1,0 +1,271 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 09:36:40 2020
+# Process ID: 9476
+# Current directory: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7408 D:\FPGA learning\SEA-master\SEA-master\Examples\FPGA\4.Module-Interface\MIPI-Camera-Interface\Image_Demo\Image_Demo.xpr
+# Log file: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/vivado.log
+# Journal file: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/Camera-IP/IP/CSI2AXIS_1.0_IP'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/Camera-IP/IP/CSI2DPHY_RX_1.0_IP'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/HDMI-IP/IP/RGB2DVI_IP'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/Camera-IP/IP/CSI2AXIS_1.0_IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/Camera-IP/IP/CSI2DPHY_RX_1.0_IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/HDMI-IP/IP/RGB2DVI_IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'csi2_d_phy_rx_0' is locked:
+* IP definition 'csi2_d_phy_rx (1.0)' for IP 'csi2_d_phy_rx_0' (customized with software release 2018.2) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'csi_to_axis_0' is locked:
+* IP definition 'csi_to_axis (1.0)' for IP 'csi_to_axis_0' (customized with software release 2018.2) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'rgb2dvi_0' is locked:
+* IP definition 'rgb2dvi (1.2)' for IP 'rgb2dvi_0' (customized with software release 2018.2) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 771.973 ; gain = 129.305
+update_compile_order -fileset sources_1
+convert_ips [get_files  {{D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0.xci}}]
+ERROR: [Vivado 12-4810] IP 'csi2_d_phy_rx_0' is locked and cannot be converted:
+
+* IP definition 'csi2_d_phy_rx (1.0)' for IP 'csi2_d_phy_rx_0' (customized with software release 2018.2) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+report_ip_status -name ip_status 
+set_property  ip_repo_paths  {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/Camera-IP/IP/CSI2AXIS_1.0_IP} {d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/Camera-IP/IP/CSI2DPHY_RX_1.0_IP} {d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/HDMI-IP/IP/RGB2DVI_IP} {D:/FPGA learning/FPGA_IP}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/Camera-IP/IP/CSI2AXIS_1.0_IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/Camera-IP/IP/CSI2DPHY_RX_1.0_IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/HDMI-IP/IP/RGB2DVI_IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA learning/FPGA_IP'.
+add_files -norecurse -scan_for_includes {{D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/Recognize_Top.v} {D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v} {D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/Threshold_Judge.v} {D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/Shape_Judge.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RGB_To_Gray' [D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v:22]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RGB_To_Gray()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/new/RGB_To_Gray.v
+	(Active) Duplicate found at line 22 of file D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'csi2_d_phy_rx_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'csi_to_axis_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rgb2dvi_0'...
+[Fri Jul 31 09:40:00 2020] Launched csi2_d_phy_rx_0_synth_1, csi_to_axis_0_synth_1, rgb2dvi_0_synth_1, blk_mem_gen_0_synth_1, clk_wiz_0_synth_1, blk_mem_gen_1_synth_1, clk_wiz_1_synth_1...
+Run output will be captured here:
+csi2_d_phy_rx_0_synth_1: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/csi2_d_phy_rx_0_synth_1/runme.log
+csi_to_axis_0_synth_1: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/csi_to_axis_0_synth_1/runme.log
+rgb2dvi_0_synth_1: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/rgb2dvi_0_synth_1/runme.log
+blk_mem_gen_0_synth_1: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/blk_mem_gen_0_synth_1/runme.log
+clk_wiz_0_synth_1: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/clk_wiz_0_synth_1/runme.log
+blk_mem_gen_1_synth_1: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/blk_mem_gen_1_synth_1/runme.log
+clk_wiz_1_synth_1: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/clk_wiz_1_synth_1/runme.log
+[Fri Jul 31 09:40:00 2020] Launched synth_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 834.191 ; gain = 10.750
+launch_runs impl_1 -jobs 16
+[Fri Jul 31 09:42:27 2020] Launched impl_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jul 31 09:44:13 2020] Launched impl_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210251A08870.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/Image_Demo.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jul 31 10:16:02 2020] Launched impl_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210251A08870.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+close_hw
+create_ip -name Driver_MIPI0 -vendor xilinx.com -library user -version 1.0 -module_name Driver_MIPI0_0 -dir {d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip}
+generate_target {instantiation_template} [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Driver_MIPI0_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Driver_MIPI0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Driver_MIPI0_0'...
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [IP_Flow 19-3422] Upgraded blk_mem_gen_0 (Block Memory Generator 8.4) from revision 1 to revision 2
+generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2046.750 ; gain = 149.543
+catch { config_ip_cache -export [get_ips -all Driver_MIPI0_0] }
+export_ip_user_files -of_objects [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}]
+launch_runs -jobs 16 Driver_MIPI0_0_synth_1
+[Fri Jul 31 10:53:00 2020] Launched Driver_MIPI0_0_synth_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/Driver_MIPI0_0_synth_1/runme.log
+export_simulation -of_objects [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}] -directory {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files} -ipstatic_source_dir {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/modelsim} {questa=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/questa} {riviera=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/riviera} {activehdl=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RGB_To_Gray' [D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v:22]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RGB_To_Gray()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/new/RGB_To_Gray.v
+	(Active) Duplicate found at line 22 of file D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v
+[Fri Jul 31 10:53:22 2020] Launched synth_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Fri Jul 31 10:54:23 2020] Launched impl_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jul 31 10:56:08 2020] Launched impl_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset Driver_MIPI0_0 {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}
+INFO: [Project 1-386] Moving file 'd:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci' from fileset 'Driver_MIPI0_0' to fileset 'sources_1'.
+create_ip -name Driver_MIPI0 -vendor xilinx.com -library user -version 1.0 -module_name Driver_MIPI0_0 -dir {d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip}
+generate_target {instantiation_template} [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Driver_MIPI0_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Driver_MIPI0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Driver_MIPI0_0'...
+INFO: [IP_Flow 19-3422] Upgraded blk_mem_gen_0 (Block Memory Generator 8.4) from revision 1 to revision 2
+catch { config_ip_cache -export [get_ips -all Driver_MIPI0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Driver_MIPI0_0, cache-ID = 89800e460c15a165; cache size = 2.014 MB.
+export_ip_user_files -of_objects [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci'
+export_simulation -of_objects [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}] -directory {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files} -ipstatic_source_dir {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/modelsim} {questa=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/questa} {riviera=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/riviera} {activehdl=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}] -no_script -reset -force -quiet
+remove_files  {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RGB_To_Gray' [D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v:22]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RGB_To_Gray()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/new/RGB_To_Gray.v
+	(Active) Duplicate found at line 22 of file D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v
+[Fri Jul 31 11:12:22 2020] Launched synth_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RGB_To_Gray' [D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v:22]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RGB_To_Gray()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/new/RGB_To_Gray.v
+	(Active) Duplicate found at line 22 of file D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v
+[Fri Jul 31 11:30:48 2020] Launched synth_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RGB_To_Gray' [D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v:22]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RGB_To_Gray()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/new/RGB_To_Gray.v
+	(Active) Duplicate found at line 22 of file D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v
+[Fri Jul 31 11:31:39 2020] Launched synth_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Fri Jul 31 11:33:20 2020] Launched impl_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jul 31 11:34:26 2020] Launched impl_1...
+Run output will be captured here: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/Image_Demo.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 12:34:55 2020...

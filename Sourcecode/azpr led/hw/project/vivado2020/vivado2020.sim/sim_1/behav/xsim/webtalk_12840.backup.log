@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jul 25 16:28:17 2020
+# Process ID: 12840
+# Current directory: D:/FPGA learning/tool/sea_azpr-master/hw/project/vivado2020/vivado2020.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/FPGA learning/tool/sea_azpr-master/hw/project/vivado2020/vivado2020.sim/sim_1/behav/xsim/xsim.dir/chip_top_test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/FPGA learning/tool/sea_azpr-master/hw/project/vivado2020/vivado2020.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/FPGA learning/tool/sea_azpr-master/hw/project/vivado2020/vivado2020.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/FPGA -notrace
+couldn't read file "D:/FPGA": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 25 16:28:17 2020...

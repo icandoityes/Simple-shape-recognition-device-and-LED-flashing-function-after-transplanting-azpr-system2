@@ -1,0 +1,91 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 09:36:40 2020
+# Process ID: 9476
+# Current directory: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7408 D:\FPGA learning\SEA-master\SEA-master\Examples\FPGA\4.Module-Interface\MIPI-Camera-Interface\Image_Demo\Image_Demo.xpr
+# Log file: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/vivado.log
+# Journal file: D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.xpr}
+update_compile_order -fileset sources_1
+convert_ips [get_files  {{D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0.xci}}]
+report_ip_status -name ip_status 
+set_property  ip_repo_paths  {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/Camera-IP/IP/CSI2AXIS_1.0_IP} {d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/Camera-IP/IP/CSI2DPHY_RX_1.0_IP} {d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/IP_Core/HDMI-IP/IP/RGB2DVI_IP} {D:/FPGA learning/FPGA_IP}} [current_project]
+update_ip_catalog
+add_files -norecurse -scan_for_includes {{D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/Recognize_Top.v} {D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/RGB_To_Gray.v} {D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/Threshold_Judge.v} {D:/FPGA learning/x project/digital_2/digital_2.srcs/sources_1/new/Shape_Judge.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/Image_Demo.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+close_hw
+create_ip -name Driver_MIPI0 -vendor xilinx.com -library user -version 1.0 -module_name Driver_MIPI0_0 -dir {d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip}
+generate_target {instantiation_template} [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}]
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}]
+catch { config_ip_cache -export [get_ips -all Driver_MIPI0_0] }
+export_ip_user_files -of_objects [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}]
+launch_runs -jobs 16 Driver_MIPI0_0_synth_1
+export_simulation -of_objects [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}] -directory {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files} -ipstatic_source_dir {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/modelsim} {questa=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/questa} {riviera=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/riviera} {activehdl=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset Driver_MIPI0_0 {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0/Driver_MIPI0_0.xci}}
+create_ip -name Driver_MIPI0 -vendor xilinx.com -library user -version 1.0 -module_name Driver_MIPI0_0 -dir {d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip}
+generate_target {instantiation_template} [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}]
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}]
+catch { config_ip_cache -export [get_ips -all Driver_MIPI0_0] }
+export_ip_user_files -of_objects [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}]
+export_simulation -of_objects [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}] -directory {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files} -ipstatic_source_dir {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/modelsim} {questa=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/questa} {riviera=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/riviera} {activehdl=D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}] -no_script -reset -force -quiet
+remove_files  {{d:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.srcs/sources_1/ip/Driver_MIPI0_0_1/Driver_MIPI0_0.xci}}
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/FPGA learning/SEA-master/SEA-master/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface/Image_Demo/Image_Demo.runs/impl_1/Image_Demo.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]

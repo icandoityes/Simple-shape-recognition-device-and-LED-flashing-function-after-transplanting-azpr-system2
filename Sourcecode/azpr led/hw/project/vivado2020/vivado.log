@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 14:48:23 2020
+# Process ID: 7376
+# Current directory: D:/ol/Sourcecode/azpr led/hw/project/vivado2020
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19464 D:\ol\Sourcecode\azpr led\hw\project\vivado2020\vivado2020.xpr
+# Log file: D:/ol/Sourcecode/azpr led/hw/project/vivado2020/vivado.log
+# Journal file: D:/ol/Sourcecode/azpr led/hw/project/vivado2020\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ol/Sourcecode/azpr led/hw/project/vivado2020/vivado2020.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/FPGA learning/tool/sea_azpr-master/hw/project/vivado2020' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Sat Aug  1 14:49:24 2020] Launched synth_1...
+Run output will be captured here: D:/ol/Sourcecode/azpr led/hw/project/vivado2020/vivado2020.runs/synth_1/runme.log
+[Sat Aug  1 14:49:24 2020] Launched impl_1...
+Run output will be captured here: D:/ol/Sourcecode/azpr led/hw/project/vivado2020/vivado2020.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sat Aug  1 14:51:23 2020] Launched impl_1...
+Run output will be captured here: D:/ol/Sourcecode/azpr led/hw/project/vivado2020/vivado2020.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 14:52:33 2020...
